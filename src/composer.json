@@ -4,7 +4,8 @@
     },
     "require-dev": {
         "codeception/codeception": "^2.3",
-        "codeception/c3": "2.*"
+        "codeception/c3": "2.*",
+        "peridot-php/peridot": "1.19"
     },
     "autoload": {
         "psr-4": {

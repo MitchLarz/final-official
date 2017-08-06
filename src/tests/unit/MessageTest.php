@@ -16,7 +16,10 @@ class MessageTest extends \Codeception\Test\Unit
 
     protected function _before()
     {
-        $this->harness = new \App\Domain\Message();
+        $this->user_valid = "foo@example.com";
+        $this->user_invalid = "example.com";
+        $this->body = "Cumque ea porro rerum voluptatem et aut officiis. Et odio hic quaerat ab aliquid.";
+        $this->harness = new \App\Domain\Message($this->user_valid, $this->body);
     }
 
     protected function _after()
@@ -26,11 +29,10 @@ class MessageTest extends \Codeception\Test\Unit
 
     public function testSetBody() {
         // arrange
-        $expected = "this is the message body";
+        $expected = $this->body;
         // act
-        $object = $this->harness->SetBody($expected);
+        $object = $this->harness->GetBody();
         // assert
-        $this->assertEquals($this->harness, $object);
         $this->assertEquals($expected, $this->harness->GetBody());
     }
 }

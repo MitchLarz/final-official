@@ -4,6 +4,7 @@ namespace App\Domain;
 
 class ChatRoom {
     protected $members;
+    protected $messages;
     protected $name;
     protected $topic;
 
