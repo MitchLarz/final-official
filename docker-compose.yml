@@ -22,7 +22,7 @@ services:
         volumes:
             - /Users/donbstringham/Sandbox/wsucs3620/data/mysql:/data
         environment:
-            - MYSQL_ROOT_PASSWORD=changeme
+            - MYSQL_ROOT_PASSWORD=password
             - MYSQL_DATABASE=cs3620
             - MYSQL_USER=foo
             - MYSQL_PASSWORD=bar

@@ -48,7 +48,7 @@ curl -X POST "http://localhost:80/chatrooms/cs3620" \
 ```
 {
   "type": "string",
-  "default": "{\n  \"email\": \"donstringham@weber.edu\",\n  \"alias\": \"darkmist\"\n}"
+  "default": "{\n  \"email\": \"mitchlarz@gmail.com\",\n  \"alias\": \"gotcha!\"\n}"
 }
 ```
 
@@ -58,7 +58,7 @@ curl -X POST "http://localhost:80/chatrooms/cs3620" \
 
 ```
 {
-  "email": "donstringham@weber.edu",
-  "alias": "darkmist"
+  "email": "mitchlarz@gmail.com",
+  "alias": "gotcha!"
 }
 ```
